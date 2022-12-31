@@ -55,52 +55,21 @@ body {
     margin-inline-start: 1em;
     margin-top: 1em;
     margin-bottom: 1em;
-    background-color: #D9D9D9;
+    background-color: #CFA5B4;
     border-radius: 10px 0 10px 10px;
     padding: 2em;
 }
 
-/* INTRODUCTION */
-.introduction {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
+/* GALLERY CONTAINER */
+.gallery-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* has x amount of columns(depends on auto fit) and the width of each column should be at least 300px and should at most take 1 fraction of whatever space is left*/
+    justify-items: center;
+    align-items: center;
 }
 
-.pfp {
-    display: flex;
-    align-self: center;
-    margin: 1em;
-    height: 15em;
-    padding: 1em;
-    background-color: #E6E6E6;
-}
-/*FIXME: how to make the width fit the screen but also be on the same row as the pfp?*/
-.intro-sentence {
-    margin: 1em;
-    background-color: #E6E6E6;
-    padding: 1em;
-    width: 100%;
-}
-
-/* PROFESSIONAL SKILLS */
-.professional-skills {
-    background-color: #E6E6E6;
-    margin: 1em;
-}
-
-.row-1 {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-}
-
-.current-position {
-    margin: 1em;
-}
-
-.skills {
-    margin: 1em;
-    padding: 1em;
-    background-color: #CFA5B4;
+.gallery-container img {
+    width: 75%;
+    padding: 1.5rem;
+    border-radius: 50px;
 }
