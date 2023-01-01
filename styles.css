@@ -6,7 +6,6 @@
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-bos;
     list-style: none;
     text-decoration: none;
     font-size: 20px;
@@ -63,26 +62,29 @@ body {
 /* INTRODUCTION */
 .introduction {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     flex-wrap: wrap;
+}
+
+/*FIXME: how to make the width fit the screen but also be on the same row as the pfp?*/
+.intro-sentence {
+    margin: 1em;
+    background-color: #E6E6E6;
+    padding: 1em;
+    /*width: 100%;*/
+    display: flex;
+    justify-content: center;
+    
 }
 
 .pfp {
     display: flex;
     align-self: center;
     margin: 1em;
-    height: 15em;
     padding: 1em;
+    height: 100%;
     background-color: #E6E6E6;
 }
-/*FIXME: how to make the width fit the screen but also be on the same row as the pfp?*/
-.intro-sentence {
-    margin: 1em;
-    background-color: #E6E6E6;
-    padding: 1em;
-    width: 100%;
-}
-
 /* PROFESSIONAL SKILLS */
 .professional-skills {
     background-color: #E6E6E6;
@@ -91,7 +93,7 @@ body {
 
 .row-1 {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     flex-wrap: wrap;
 }
 
@@ -103,4 +105,26 @@ body {
     margin: 1em;
     padding: 1em;
     background-color: #CFA5B4;
+}
+
+.programming {
+    display: flex;
+    flex-direction: column;
+}
+
+.programming-langs {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.tools {
+    display: flex;
+    flex-direction: column;
+}
+
+.tools-list {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
 }
